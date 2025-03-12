@@ -1,11 +1,16 @@
+# Import required libraries
 import streamlit as st
 import random
-import time
+import time  
 
+# Set the title of the app
 st.title("Quiz App 🧠")
 
+# Display welcome message
 st.write("Welcome to the Python Quiz App! Test your knowledge of Python strings, methods, and ASCII values 🐍📚")
 
+
+# Quiz questions and answers stored in a dictionary format
 questions = [
     {
         "question": "What is the ASCII value of 'A'?",
@@ -91,26 +96,28 @@ questions = [
         "answer": ".join()"
     }
 ]
-
+# Initialize random question if not in session_state
 if 'current_question' not in st.session_state:
     st.session_state.current_question = random.choice(questions)
 
-
+# Get current question
 question = st.session_state.current_question
 
+# Display question
 st.subheader(question["question"])
 
-selected_options =st.radio("Select your option", question["options"] , key = "answer")
+# Show options as radio buttons
+selected_options = st.radio("Select your option", question["options"], key="answer")
 
+# Handle answer submission
 if st.button("Submit Answer"):
-
+    # Check if answer is correct
     if selected_options == question["answer"]:
         st.success("Correct Answer!✅")
     else:    
         st.error("Incorrect!❌ The correct answer is: " + str(question["answer"]))
 
-
+    # Wait and show next question
     time.sleep(7)
-
     st.session_state.current_question = random.choice(questions)
     st.rerun()
