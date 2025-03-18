@@ -50,7 +50,8 @@ This repo was created as a **Ramadan Coding Challenge** – to stay productive a
 
 2. Navigate to any project folder:
    ```bash
-cd 03-password-generator
+   cd 03-password-generator
+   ```
 
 
 3. Run the app:
