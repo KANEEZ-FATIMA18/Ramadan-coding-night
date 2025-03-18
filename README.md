@@ -1,6 +1,6 @@
 # 🌙 Ramadan Coding Projects 🚀
 
-Welcome to **Ramadan Coding**, a collection of fun, beginner-friendly, and practical Python mini-projects created during the holy month of Ramadan. The goal of this repository is to enhance coding skills, practice problem-solving, and build small but useful tools using **Python**, **Streamlit**, and **FastAPI**.
+Welcome to **Ramadan Coding**, a collection of fun, beginner-friendly, and practical Python mini-projects created during the holy month of Ramadan. The goal of this repository is to enhance coding skills, practice problem-solving, and build small but useful tools using **Python**, **Streamlit**, **FastAPI**.& **Chainlit**
 
 ---
 
@@ -30,6 +30,7 @@ Welcome to **Ramadan Coding**, a collection of fun, beginner-friendly, and pract
 - FastAPI ⚡  
 - CLI (Command Line Interface) tools  
 - Vercel (For deployment)
+- Chainlit (for Build AI applications)
 
 ---
 
@@ -45,3 +46,21 @@ This repo was created as a **Ramadan Coding Challenge** – to stay productive a
    ```bash
    git clone https://github.com/your-username/ramadan-coding.git
    cd ramadan-coding
+
+
+2. Navigate to any project folder:
+   ```bash
+cd 03-password-generator
+
+
+3. Run the app:
+
+   For CLI-based projects:
+   ```bash
+   python filename.py
+   ```
+
+For Streamlit apps:
+   ```bash
+   streamlit run app.py
+   ```
